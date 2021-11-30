@@ -10,8 +10,8 @@ if (workbox) {
 		new workbox.strategies.CacheFirst({
 			cacheName: "images", 
 			plugins: [
-				new workbox.expiration.Plugins({
-					maxEntries; 50,
+				new workbox.expiration.Plugin({
+					maxEntries: 50,
 					maxAgeSeconds: 30 * 24 * 60 * 60,
 				})
 			]
